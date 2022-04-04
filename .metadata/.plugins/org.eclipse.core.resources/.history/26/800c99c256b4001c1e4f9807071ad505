@@ -1,0 +1,50 @@
+package com.samples.javademos.setDemo;
+
+import java.util.Objects;
+
+public class testsortedSet {
+	
+	public static void main(String[] args) {
+		NewBook book1 = new NewBook("Harry pottter")
+	}
+}
+	
+	class NewBook implements Comparable{
+		private String title;
+		private String author;
+		private int year;
+		public NewBook(String title, String author, int year) {
+			this.title = title;
+			this.author = author;
+			this.year = year;
+		}
+		public String getTitle() {
+			return title;
+		}
+		@Override
+		public String toString() {
+			return "Book [title=" + title + ", author=" + author + ", year=" + year + "]";
+		}
+//		public int hashCode() {
+//			return title.hashCode();
+//		}
+//		public boolean equals(Object obj) {
+//			return this.title.equalsIgnoreCase(((Book)obj).getTitle());
+//		}
+		@Override
+		public int hashCode() {
+			return Objects.hash(author, title, year);
+		}
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			Book other = (Book) obj;
+			return Objects.equals(author, other.author) && Objects.equals(title, other.title) && year == other.year;
+		}
+
+}

@@ -1,0 +1,5 @@
+package com.samples.javademos.oop6.interfaces;
+
+public interface DeskPhone {
+
+}

@@ -1,0 +1,5 @@
+package com.samples.javademos.oop7.abstractclasses;
+
+public class Animal {
+
+}

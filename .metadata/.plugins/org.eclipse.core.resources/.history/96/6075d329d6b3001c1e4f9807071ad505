@@ -1,0 +1,22 @@
+package com.samples.javademos.setDemo;
+
+import java.util.NavigableSet;
+import java.util.TreeSet;
+
+public class testnavigableSet {
+	
+	public static void main(String[] args) {
+		
+		NavigableSet <Integer> setoffints = new TreeSet<Integer>();
+		setoffints.add(74);
+		setoffints.add(45);
+		setoffints.add(87);
+		setoffints.add(98);
+		
+		System.out.println(setoffints);
+		
+		
+		System.out.println("" + setoffints.lower(74));
+	}
+
+}
