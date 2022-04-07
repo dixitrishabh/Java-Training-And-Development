@@ -1,1 +1,2 @@
-Testing Buffered OutputGreetings !! .. Hello Rishabh !! Welcome.
+1: go for a run
+2: buy milk
